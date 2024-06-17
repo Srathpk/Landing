@@ -27,8 +27,6 @@ first_q, second_q, third_q and forth_q respectively.
 
 .logo {
   display: flex;
-  /* justify-content: left; */
-  align-items: center;
   width: 25%;
 }
 
@@ -41,8 +39,13 @@ ul {
   display: flex;
   padding: 0;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 12px; /*-------------*/
   color: #e5e7eb;
+}
+
+li {
+  /* width: 125px; */
+  gap: 20px;
 }
 
 a,
@@ -99,14 +102,14 @@ first_q_left and first_q_right */
 
 .text_a_1q {
   background-color: #1f2937;
-  font-size: 48px;
+  font-size: 36px; /*Directions where to  have this @48px but 36px is closer to the desired outcome*/
   font-weight: bolder;
   color: #f9faf8;
 }
 
 .text_b_1q,
 .img_place {
-  font-size: 18px;
+  font-size: 14px; /*Directions where to  have this @18px but 14px is closer to the desired outcome*/
   color: #e5e7eb;
 }
 
@@ -115,7 +118,7 @@ first_q_left and first_q_right */
   background-color: #57585a;
   padding: 20px;
   width: 300px;
-  height: 150px;
+  height: 100px;
   justify-content: center;
   align-items: center;
 }
