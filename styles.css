@@ -156,7 +156,6 @@ first_q_left and first_q_right */
 .tile,
 .texttile {
   display: flex;
-  padding: 20px;
   width: 110px;
   justify-content: center;
   align-items: center;
@@ -165,12 +164,13 @@ first_q_left and first_q_right */
 .texttile {
   font-size: 12px;
   text-align: center;
-  padding-left: 2px; /* Border of tiles compensation*/
-  padding-right: 2px;
+  padding-left: 22px; /* Border of tiles compensation +2*/
+  padding-right: 22px; /* Border of tiles compensation +2*/
 }
 
 .tile {
   border-radius: 18px;
+  padding: 20px;
   border: 2px solid #3882f6;
   height: 85px;
 }
