@@ -77,6 +77,7 @@ a:visited {
   width: 100%;
   height: 22%;
   gap: 40px;
+  overflow: hidden;
 }
 
 /* First quarter is divided in two quarters
@@ -84,11 +85,10 @@ first_q_left and first_q_right */
 
 .first_q_left {
   display: flex;
-  flex-shrink: 0;
   padding: 0px;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  width: 25%;
+  width: 26%;
+  /* overflow: hidden; */
 }
 
 .first_q_right {
@@ -96,20 +96,23 @@ first_q_left and first_q_right */
   flex-direction: column;
   align-items: center;
   width: 27%;
+  overflow: hidden;
 }
 
 /* First quarters elements */
+/* Created 3 containers. Two for the text 
+(text_a_1q, text_b_1q) and one for the image */
 
 .text_a_1q {
   background-color: #1f2937;
-  font-size: 36px; /*Directions where to  have this @48px but 36px is closer to the desired outcome*/
+  font-size: 36px; /*Directions where to have 48px but 36px is closer to the desired outcome*/
   font-weight: bolder;
   color: #f9faf8;
 }
 
 .text_b_1q,
 .img_place {
-  font-size: 14px; /*Directions where to  have this @18px but 14px is closer to the desired outcome*/
+  font-size: 14px; /*Directions where to have 18px but 14px is closer to the desired outcome*/
   color: #e5e7eb;
 }
 
@@ -127,8 +130,6 @@ first_q_left and first_q_right */
 
 /* START Second quarter */
 
-/* Second quarter is divided in three containers */
-
 .second_q {
   display: flex;
   flex-direction: column;
@@ -136,6 +137,10 @@ first_q_left and first_q_right */
   height: 32%;
   width: 100%;
 }
+
+/* Second quarter is divided in three containers
+One for the title (text_a_2q), one for the tiles(tiles)
+and the last for descriprion under the tiles (texttiles) */
 
 .text_a_2q {
   display: flex;
@@ -149,23 +154,18 @@ first_q_left and first_q_right */
 .texttiles {
   display: flex;
   gap: 40px;
-  justify-content: center;
-  align-items: center;
 }
 
 .tile,
 .texttile {
   display: flex;
-  width: 110px;
-  justify-content: center;
-  align-items: center;
 }
 
 .texttile {
   font-size: 12px;
   text-align: center;
-  padding-left: 22px; /* Border of tiles compensation +2*/
-  padding-right: 22px; /* Border of tiles compensation +2*/
+  padding: 10px 12px 0px 12px; /* Border of tiles compensation padding+2*/
+  width: 110px;
 }
 
 .tile {
@@ -173,27 +173,38 @@ first_q_left and first_q_right */
   padding: 20px;
   border: 2px solid #3882f6;
   height: 85px;
+  width: 90px;
 }
 
-/*---------------------------------------*/
+/* END of second quarter */
+
+/* START third quarter */
+
+/* For the third quarter two containers where used
+one for the quote (text_a_3q) and one for the name
+of the author of the quote (text_b_3q)*/
 
 .third_q {
   display: flex;
   flex-direction: column;
   height: 20%;
   background-color: #e5e7eb;
+  overflow: hidden;
 }
 
 .text_a_3q {
-  font-size: 36px;
+  font-size: 22px; /*Directions where to have 36px but 18px is closer to the desired outcome*/
   display: flex;
   font-style: italic;
+  justify-content: center;
+  padding: 40px 300px 10px;
 }
 .text_b_3q {
   display: flex;
   font-weight: bolder;
   font-size: 18px;
   justify-content: right;
+  padding-right: 300px;
 }
 
 /*---------------------------------------*/
