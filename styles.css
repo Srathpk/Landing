@@ -22,7 +22,7 @@ first_q, second_q, third_q and forth_q respectively.
   color: #f9faf8;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 70px;
 }
 
 .logo {
@@ -37,7 +37,7 @@ first_q, second_q, third_q and forth_q respectively.
 
 ul {
   display: flex;
-  padding: 0;
+  padding-left: 30px;
   list-style-type: none;
   font-size: 12px; /*-------------*/
   color: #e5e7eb;
@@ -165,6 +165,8 @@ first_q_left and first_q_right */
 .texttile {
   font-size: 12px;
   text-align: center;
+  padding-left: 2px; /* Border of tiles compensation*/
+  padding-right: 2px;
 }
 
 .tile {
