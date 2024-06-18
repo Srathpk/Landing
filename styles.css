@@ -5,6 +5,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /*
@@ -26,30 +27,26 @@ first_q, second_q, third_q and forth_q respectively.
 }
 
 .logo {
-  display: flex;
-  width: 26%;
+  /* display: flex; */
+  width: 25%;
 }
 
 .links {
-  display: flex;
-  max-width: 26%;
-  min-width: 26%;
-  padding: 0px;
-  justify-content: right;
+  /* display: flex; */
+  width: 25%;
 }
 
 ul {
   display: flex;
+  padding-left: 30px;
   list-style-type: none;
   font-size: 12px; /*-------------*/
   color: #e5e7eb;
-  padding: 0;
 }
 
 li {
-  display: flex;
+  /* width: 125px; */
   gap: 20px;
-  padding: 0;
 }
 
 a,
@@ -61,11 +58,12 @@ a:visited {
 
 .footer {
   background-color: #1f2937;
+  /* margin-top: auto; */
   height: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #e5e7eb;
   font-size: 14px;
 }
 
@@ -74,14 +72,15 @@ a:visited {
 /* START First quarter */
 
 .first_q {
+  padding-top: 30px;
   background-color: #1f2937;
   display: flex;
+  /* flex-grow: 2; */
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 22%;
-  gap: 70px;
-  overflow: hidden;
+  gap: 40px;
+  /* overflow: hidden; */
 }
 
 /* First quarter is divided in two quarters
@@ -92,37 +91,43 @@ first_q_left and first_q_right */
   padding: 0px;
   flex-direction: column;
   width: 26%;
+  /* min-width: 26%; */
+  /* overflow: hidden; */
 }
 
 .first_q_right {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   width: 26%;
-  overflow: hidden;
 }
 
 /* First quarters elements */
-/* Created 3 containers. Two for the text 
-(text_a_1q, text_b_1q) and one for the image */
+/* Title, Subtext and a container for the image */
 
-.text_a_1q {
+h1 {
+  margin: 0;
   background-color: #1f2937;
-  font-size: 36px; /*Directions where to have 48px but 36px is closer to the desired outcome*/
+  font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
+  overflow: hidden;
 }
 
-.text_b_1q,
-.img_place {
-  font-size: 14px; /*Directions where to have 18px but 14px is closer to the desired outcome*/
+.subtext {
+  margin: 0;
+  font-size: 18px;
   color: #e5e7eb;
+  text-align: left;
 }
 
 .img_place {
   display: flex;
+  margin: 0;
+  font-size: 18px;
   background-color: #57585a;
-  padding: 20px;
+  color: #e5e7eb;
+  padding: 40px;
   width: 300px;
   height: 100px;
   justify-content: center;
@@ -139,54 +144,33 @@ first_q_left and first_q_right */
   align-items: center;
   height: 32%;
   width: 100%;
-  overflow: hidden;
 }
 
-/* Second quarter is divided in two containers
-One for the title (text_a_2q) and one (tokens) for the tiles(tiles)
-and the descriprion under the tiles (texttiles) */
-
-.text_a_2q {
-  display: flex;
+h2 {
   font-size: 36px;
   font-weight: bolder;
   color: #1f2937;
   padding: 20px;
-  width: 60%;
-  overflow: hidden;
-  justify-content: center;
+  margin: 0;
 }
 
-.tokens {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  align-items: center;
-}
-.tiles,
 .texttiles {
   display: flex;
   gap: 40px;
 }
 
-.tile,
-.texttile {
-  display: flex;
-}
-
 .texttile {
   font-size: 12px;
   text-align: center;
-  padding: 10px 12px 0px 12px; /* Border of tiles compensation padding+2*/
   width: 110px;
 }
 
 .tile {
-  border-radius: 18px;
+  border-radius: 10px;
   padding: 20px;
   border: 2px solid #3882f6;
-  height: 85px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
 
 /* END of second quarter */
@@ -194,70 +178,80 @@ and the descriprion under the tiles (texttiles) */
 /* START third quarter */
 
 /* For the third quarter two containers where used
-one for the quote (text_a_3q) and one for the name
-of the author of the quote (text_b_3q)*/
+one for the quote and one for the name
+of the author of the quote*/
 
 .third_q {
   display: flex;
   flex-direction: column;
-  height: 20%;
-  background-color: #e5e7eb;
-  overflow: hidden;
-  width: 100%;
   align-items: center;
+  background-color: #e5e7eb;
+  /* overflow: hidden; */
 }
 
-.text_a_3q {
-  font-size: 22px; /*Directions where to have 36px but 22px is closer to the desired outcome*/
+.quote {
+  font-size: 36px;
   display: flex;
   font-style: italic;
-  width: 50%;
-  text-align: justify;
-  padding-top: 20px;
+  font-weight: 100;
+  justify-content: center;
+  /* padding-left: 250px;
+  padding-right: 250px; */
+  width: 60%;
+  margin-bottom: 0;
 }
-
-.text_b_3q {
-  display: flex;
+.author {
   font-weight: bolder;
   font-size: 18px;
-  width: 50%;
-  justify-content: right;
+  text-align: right;
+  /* padding-right: 250px; */
+  width: 60%;
+  margin-top: 0;
 }
 
 /*---------------------------------------*/
 
 .forth_q {
   display: flex;
-  height: 18%;
-  color: #1f2937;
+  flex-grow: 0;
+  height: 15%;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.forth_q_cont {
+.forth_q_clr {
   display: flex;
-  background-color: #3882f6;
   justify-content: space-around;
   align-items: center;
+  background-color: #3882f6;
   width: 60%;
-  height: 40%;
+  height: 50px;
 }
 
-.forth_q_text {
+.forth_q_cont {
   display: flex;
   flex-direction: column;
-}
-
-.text_a_4q {
-  display: flex;
+  text-align: left;
   color: #e5e7eb;
 }
 
-.text_b_4q {
+.call2act {
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
   display: flex;
-  color: #e5e7eb;
-  font-size: 12px;
+  /* color: #e5e7eb; */
+}
+
+.call2subtext {
+  background-color: inherit;
+  color: #bbbbbb;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+  display: flex;
+  /* color: #e5e7eb; */
 }
 
 /*---------------------------------------*/
@@ -269,18 +263,22 @@ button {
   padding: 5px 25px;
   font-size: 14px;
   border-radius: 5px;
+  width: 110px;
+  text-align: center;
 }
 
-.sign_up_dwn button {
-  border: 1px solid #e5e7eb;
+.dwn {
+  /* border: 1px solid #e5e7eb; */
+  border: 1px solid #ffffff;
 }
 
-.sign_up_top button {
+.top {
   margin-top: 5px;
-  border: 1px;
+  margin-bottom: 5px;
+  border: 1px solid #3882f6;
 }
 
-.sign_up_top,
+/* .sign_up_top,
 .sign_up_dwn {
   display: flex;
-}
+} */
