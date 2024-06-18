@@ -27,25 +27,29 @@ first_q, second_q, third_q and forth_q respectively.
 
 .logo {
   display: flex;
-  width: 25%;
+  width: 26%;
 }
 
 .links {
   display: flex;
-  width: 25%;
+  max-width: 26%;
+  min-width: 26%;
+  padding: 0px;
+  justify-content: right;
 }
 
 ul {
   display: flex;
-  padding-left: 30px;
   list-style-type: none;
   font-size: 12px; /*-------------*/
   color: #e5e7eb;
+  padding: 0;
 }
 
 li {
-  /* width: 125px; */
+  display: flex;
   gap: 20px;
+  padding: 0;
 }
 
 a,
@@ -61,7 +65,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e5e7eb;
+  color: white;
   font-size: 14px;
 }
 
@@ -76,7 +80,7 @@ a:visited {
   align-items: center;
   width: 100%;
   height: 22%;
-  gap: 40px;
+  gap: 70px;
   overflow: hidden;
 }
 
@@ -88,14 +92,13 @@ first_q_left and first_q_right */
   padding: 0px;
   flex-direction: column;
   width: 26%;
-  /* overflow: hidden; */
 }
 
 .first_q_right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 27%;
+  width: 26%;
   overflow: hidden;
 }
 
@@ -136,11 +139,12 @@ first_q_left and first_q_right */
   align-items: center;
   height: 32%;
   width: 100%;
+  overflow: hidden;
 }
 
-/* Second quarter is divided in three containers
-One for the title (text_a_2q), one for the tiles(tiles)
-and the last for descriprion under the tiles (texttiles) */
+/* Second quarter is divided in two containers
+One for the title (text_a_2q) and one (tokens) for the tiles(tiles)
+and the descriprion under the tiles (texttiles) */
 
 .text_a_2q {
   display: flex;
@@ -148,8 +152,17 @@ and the last for descriprion under the tiles (texttiles) */
   font-weight: bolder;
   color: #1f2937;
   padding: 20px;
+  width: 60%;
+  overflow: hidden;
+  justify-content: center;
 }
 
+.tokens {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
 .tiles,
 .texttiles {
   display: flex;
@@ -190,21 +203,25 @@ of the author of the quote (text_b_3q)*/
   height: 20%;
   background-color: #e5e7eb;
   overflow: hidden;
+  width: 100%;
+  align-items: center;
 }
 
 .text_a_3q {
-  font-size: 22px; /*Directions where to have 36px but 18px is closer to the desired outcome*/
+  font-size: 22px; /*Directions where to have 36px but 22px is closer to the desired outcome*/
   display: flex;
   font-style: italic;
-  justify-content: center;
-  padding: 40px 300px 10px;
+  width: 50%;
+  text-align: justify;
+  padding-top: 20px;
 }
+
 .text_b_3q {
   display: flex;
   font-weight: bolder;
   font-size: 18px;
+  width: 50%;
   justify-content: right;
-  padding-right: 300px;
 }
 
 /*---------------------------------------*/
@@ -240,6 +257,7 @@ of the author of the quote (text_b_3q)*/
 .text_b_4q {
   display: flex;
   color: #e5e7eb;
+  font-size: 12px;
 }
 
 /*---------------------------------------*/
