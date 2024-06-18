@@ -24,12 +24,20 @@ to accomodate all 4 quarters.
   color: #f9faf8;
   font-size: 24px;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
 .logo {
-  padding-left: 250px;
+  display: flex;
+  padding-left: 350px;
+  min-width: 420px;
 }
 .links {
-  padding-right: 250px;
+  display: flex;
+  padding-right: 350px;
 }
 
 ul {
@@ -37,10 +45,11 @@ ul {
   list-style-type: none;
   font-size: 18px;
   color: #e5e7eb;
+  min-width: 450px;
 }
 
 li {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 a,
@@ -56,26 +65,19 @@ a:visited {
   background-color: #1f2937;
   color: #e5e7eb;
   font-size: 14px;
-  /* margin-top: auto; */
+  margin-top: auto;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
 /* End of Header, footer, lists and links */
 
 /* START First quarter */
 
 .first_q {
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  justify-content: space-between;
   padding-top: 30px;
   background-color: #1f2937;
   width: 100%;
-  /* gap: 40px; */
 }
 
 /* First quarter is divided in two quarters
@@ -84,19 +86,16 @@ first_q_left and first_q_right */
 .first_q_left {
   display: flex;
   flex-direction: column;
-  padding-left: 250px;
+  padding-left: 350px;
   padding-right: 50px;
-  /* width: 26%; */
-  /* min-width: 26%; */
-  /* overflow: hidden; */
+  max-width: 450px;
+  min-width: 420px;
 }
 
 .first_q_right {
   display: flex;
   align-items: center;
-  padding-right: 250px;
-  /* width: 26%; */
-  /* flex-direction: column; */
+  padding-right: 350px;
 }
 
 /* First quarters elements */
@@ -108,7 +107,6 @@ h1 {
   font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
-  /* overflow: hidden; */
 }
 
 .subtext {
@@ -122,13 +120,13 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   font-size: 18px;
   background-color: #57585a;
   color: #e5e7eb;
   padding: 50px;
   width: 400px;
   height: 100px;
+  margin-bottom: 30px;
 }
 
 /* END of first quarter */
@@ -141,7 +139,8 @@ h1 {
   align-items: center;
   width: 100%;
   padding-bottom: 80px;
-  /* height: 32%; */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 h2 {
@@ -182,7 +181,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #e5e7eb;
-  /* overflow: hidden; */
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
 }
 
 .quote {
@@ -191,36 +191,32 @@ h2 {
   font-style: italic;
   font-weight: 100;
   font-size: 36px;
-  padding-left: 350px;
-  padding-right: 350px;
+  padding-left: 525px;
+  padding-right: 525px;
+  min-width: 500px;
+  max-width: 850px;
 }
 .author {
   text-align: right;
   font-weight: bolder;
   font-size: 18px;
   width: 60%;
-  /* padding-right: 250px; */
-  /* margin-top: 0; */
 }
 
-/*---------------------------------------*/
+/* END of third quarter */
+
+/* START forth quarter */
 
 .forth_q {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 0;
-  width: 100%;
-  /* height: 15%; */
-}
-
-.forth_q_clr {
-  display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-grow: 0;
   background-color: #3882f6;
-  width: 60%;
-  /* height: 50px; */
+  margin: 50px 350px;
+  padding: 25px 0px;
+  border-radius: 5px;
+  min-width: 500px;
 }
 
 .forth_q_cont {
@@ -235,7 +231,6 @@ h2 {
   background-color: inherit;
   padding: 0;
   margin: 0;
-  /* color: #e5e7eb; */
 }
 
 .call2subtext {
@@ -245,10 +240,11 @@ h2 {
   padding: 0;
   margin: 0;
   font-size: 0.8em;
-  /* color: #e5e7eb; */
 }
 
-/*---------------------------------------*/
+/* END forth quarter */
+
+/*-------Buttons-------*/
 
 button {
   display: flex;
